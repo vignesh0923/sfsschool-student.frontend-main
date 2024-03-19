@@ -1,0 +1,102 @@
+.all-students {
+  height: calc(100vh - 20px);
+  overflow: hidden;
+  width: 100%;
+  background-color: #1d2939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.standard {
+  padding: 2px 22px 20px 22px;
+  background-color: #32d583;
+  color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+@media (max-width: 600px) {
+  .standard {
+    top: 7%;
+  }
+}
+@media (min-width: 800px) {
+  .standard {
+    top: 8%;
+  }
+}
+@media(min-width : 1000px){
+  .standard{
+    top: 10%;
+  }
+}
+
+.std-box {
+  background-color: white;
+  height: calc(90% - 20px);
+  width: calc(90% - 20px);
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  margin-top: 30px;
+  overflow-y: scroll;
+}
+.std-box::-webkit-scrollbar {
+  display: none;
+}
+.std-box > .std-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 5px;
+  background-color: #1d2939;
+  margin: 0px 0px 10px 0px;
+  font-size: 18px;
+  color: white;
+}
+.std-box > ul {
+  flex: 4;
+}
+.std-ul-1 {
+  display: flex;
+  color: #000000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 0px 0px 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border-bottom: 1px solid #32d583;
+}
+.std-ul-1:hover {
+  background-color: #1d293918;
+}
+.li-1 {
+  flex: 0.5;
+  text-align: start;
+}
+.li-2 {
+  text-align: center;
+  flex: 1;
+}
+.li-3 {
+  flex: 1;
+  text-align: center;
+}
+.li-4 {
+  flex: 1;
+  text-align: center;
+}
+.del {
+  flex: 0.5;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
